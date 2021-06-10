@@ -68,11 +68,17 @@ h1{
     margin-left:20px;
     text-align: center;
 }
+.notas{
+    width:100%;
+    overflow:auto;
+}
 li{
+    display:inline-block;
     margin-top:15px;
     list-style: none;
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     border-radius: var(--border-radius);
+    width: 100%;
 }
 
 .bx-trash{
@@ -123,7 +129,11 @@ li{
         font-size: 40px;
     }
     ul{margin-top:55px;}
+    .notas{
+        overflow:auto;
+    }
     li{
+        display:inline-block;
         margin-top:15px;
         font-size: 50px;
     }
@@ -135,6 +145,12 @@ li{
 }
 @media only screen and (max-width:650px){
   .borrar-todo{
-      width:80%;
+        width:80%;
+  }
+  .notas{
+        overflow:auto;
+  }
+  li{
+        display:inline-block;
   }
 }
